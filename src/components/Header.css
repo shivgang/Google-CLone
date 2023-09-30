@@ -1,0 +1,47 @@
+.header{    
+    display: flex;
+    background-color: #3333;
+    flex-direction: row;
+    height: 15%;
+    justify-content:right;
+}
+.navbar{
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 90%;
+    width: 100%;
+    margin: 5px;
+
+}
+
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    /* background-color: red; */
+    width: 5%;
+    height: 90%;
+    display: flex;
+    justify-content:space-evenly;
+    margin: 5px;
+}
+
+.nav-item a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    text-decoration:underline
+}
+
+.nav-item button{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(49, 45, 45, 0.873);
+}
+
