@@ -1,64 +1,74 @@
-.header{
-    height: 10%;
-    background-color: #3333;
-    display: flex;
-    justify-content: flex-end;
+/* Styling for the header */
+.header {
+    height: 10%; /* Set the header height to 10% of the viewport height */
+    background-color: #3333; /* Set the background color to a shade of gray */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align content to the flex end (right) */
 }
 
-.navbar{
-    display: flex;
-    height: 90%;
-    width: 250px;
-    margin: auto 5px;
-    /* background-color: red; */
-    right: 10px;
+/* Styling for the navigation bar */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    height: 90%; /* Set the navbar height to 90% of the header's height */
+    width: 250px; /* Set a fixed width for the navbar */
+    margin: auto 5px; /* Apply margin with auto on top and 5px on the sides */
+    right: 10px; /* Set a fixed right margin of 10px */
 }
 
+/* Styling for the text and icons within the navbar */
 .navbar .text,
-.navbar .icons{
-    display: flex;
-    justify-content: space-between;
-    height: 90%;
-    margin: auto;
-    width: 50%;
-    padding-top: 6px;
-    color: white;
-    /* background-color: #333333; */
-}
-a:hover{
-    text-decoration: underline;
-}
-.links{
-    margin: 0 5px;
-}
-.emoticons{
-    margin: 0 auto;  
+.navbar .icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Create space between text and icons */
+    height: 90%; /* Set the height of text and icons to 90% of navbar's height */
+    margin: auto; /* Center text and icons vertically within the navbar */
+    width: 50%; /* Set the width to 50% of the navbar's width */
+    padding-top: 6px; /* Add some top padding to vertically center content */
+    color: white; /* Set the text color to white */
 }
 
-.apps{
-    border-radius: 50%;
-    margin-right: 10px;
-    color: white;
-    transition: background-color 100ms ease-in;
-    cursor: pointer;
-    :hover{
-        background-color: #6a6868;
+/* Styling for links within the navbar */
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Styling for individual links within the navbar */
+.links {
+    margin: 0 5px; /* Add some horizontal margin to links */
+}
+
+/* Styling for emoticons (e.g., icons) */
+.emoticons {
+    margin: 0 auto; /* Center emoticons horizontally within their container */
+}
+
+/* Styling for the "Apps" icon */
+.apps {
+    border-radius: 50%; /* Apply a circular border radius */
+    margin-right: 10px; /* Add right margin to create space between icons */
+    color: white; /* Set the icon color to white */
+    transition: background-color 100ms ease-in; /* Smooth background color transition on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    
+    :hover {
+        background-color: #6a6868; /* Change background color on hover */
     }
 }
-.avatar{
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 100ms ease-in;
-    :hover{
-        background-color: #6a6868;
+
+/* Styling for the "Avatar" icon */
+.avatar {
+    border-radius: 50%; /* Apply a circular border radius */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    transition: background-color 100ms ease-in; /* Smooth background color transition on hover */
+    
+    :hover {
+        background-color: #6a6868; /* Change background color on hover */
     }
 }
 
-
-@media (max-width:550px){
-    .text,
-    .icons{
-        display: none;
-        background-color: black;
+/* Media query for screens with a maximum width of 340px */
+@media (max-width: 340px) {
+    .navbar {
+        display: none; /* Hide the navbar on small screens */
     }
 }

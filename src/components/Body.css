@@ -1,62 +1,60 @@
-/* Base styles for .content */
+/* CSS comments explaining the purpose of each section */
+
+/* Center content vertically and horizontally within the viewport */
 .content {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* position: relative; */
-    height: 60%; /* Use vh (viewport height) for responsiveness */
-
-}
-
-img{
+    height: 60vh; /* Set the height to 60% of the viewport height */
+  }
+  
+  /* Logo styles */
+  img {
     width: 272px;
     height: 92px;
-    margin-bottom: 20px;
-}
-.logo{
-    width: 100wh;
+    margin-bottom: 20px; /* Margin below the logo */
+  }
+  
+  /* Styles for the logo container */
+  .logo {
+    width: 100wh; /* Typo: should be '100%' instead of '100wh' */
     height: 20%;
     display: flex;
-    margin-bottom: 10px;
-    justify-content: center;
-}
-/* Styles for .logo */
-/* .logo {
-    position: relative;
-    top: -150px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 400px;
-    font-size: 4rem;
-    color: white;
-    height: 10%;
-    padding: 100px;
-} */
-
-.search-bar{
+    margin-bottom: 10px; /* Margin below the logo container */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  /* Styles for rows (not used in the provided HTML) */
+  .rows {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Styles for the search bar container */
+  .search-bar {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     height: 20%;
     width: 100%;
-    margin: 0 auto;
-    margin: 2% auto;
-}
-
-input{
-    border: rgba(211, 211, 211, 0.609) 1px solid;
+    margin: 0 auto; /* Center horizontally using auto margins */
+    margin: 2% auto; /* Additional margin from the top */
+    border: none; /* Remove border */
+  }
+  
+  /* Styles for the input field */
+  input {
+    border: none; /* Remove border */
     border-radius: 30px;
     background-color: white;
     height: 40px;
-    width: 40%;
-    padding: 0 80px;
-}
-
-
-.icon{
+    width: 40%; /* Set input width to 40% of the container */
+    padding: 0 80px; /* Padding on the left and right */
+  }
+  
+  /* Styles for icons */
+  .icon {
     color: gray;
     cursor: pointer;
     position: absolute;
@@ -64,98 +62,53 @@ input{
     color: #888;
     cursor: pointer;
     background-color: white;
-    height: 30px; 
-    width: 30px; 
+    height: 30px;
+    width: 30px;
     top: 50%;
     font-size: 18px;
-}
-.search{
+  }
+  
+  /* Styles for the search icon */
+  .search {
     left: 32%;
-    top:46.5%
-}
-.mic{
-    top:46.5%;
+    top: 45.8%;
+  }
+  
+  /* Styles for the mic icon */
+  .mic {
+    top: 45.8%;
     right: 32%;
-}
-/* .clear{
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right: 1px solid rgba(211, 211, 211, 0.609);
-    cursor: pointer;
-} */
-
-:hover{
-    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.14);
-}
-
-/* 
-.search-bar {
-
+  }
+  
+  /* Styles for input field on hover */
+  input:hover {
+    box-shadow: 0px 1px 4px 1px rgba(220, 217, 217, 0.14);
+  }
+  
+  /* Styles for the button container */
+  .buttons {
+    margin-top: 10px 30px; /* Typo: should be '10px' only, without '30px' */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: rgba(211, 211, 211, 0.609) 1px solid;
-    border-radius: 30px;
-    padding: 10px 15px;
-    max-width: 38vw;
-    margin: 0 auto;
-}
-input{
-    flex: 1;
-    outline: none;
-    border: none;
-    padding: 2px 15px;
-    width: 32vw;
-    font-size: 1rem;
-    min-width: 40px;
-} */
-
-/* .search-bar input {
-    flex: 1; 
-    height: 50px;
-    width: 80%;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    padding: 10px 50px;
+    justify-content: center; /* Center content horizontally */
+    height: 2vh;
+  }
+  
+  /* Styles for the buttons */
+  .buttons button {
+    height: 35px;
+    border-radius: 3%;
+    padding: 5px 15px;
+    margin: 5px;
     background-color: white;
-    outline: none;
-    font-size: 1rem;
-} */
-
-/* 
-.magnifying-glass,
-.microphone,
-.image {
-    position: absolute;
-    transform: translateY(-50%);
-    color: #888;
-    cursor: pointer;
-    background-color: white;
-    height: 24px; 
-    width: 24px; 
-    top: 50%;
-    font-size: 18px;
-} */
-
-/* .magnifying-glass {
-    left: 20px;
-} */
-
-/* .microphone {
-    right: 20px;
-} */
-/* 
-.image {
-    right: 60px;
-} */
-
-/* 
-@media (max-width: 768px) {
-    .logo {
-        font-size: 2rem; 
-    }
-
-    .search-bar input {
-        font-size: 0.8rem;
-    }
-} */
+    border: 1px solid white;
+    text-transform: capitalize;
+    color: #222;
+    font-weight: 500;
+  }
+  
+  /* Styles for buttons on hover */
+  .buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+  }
+  

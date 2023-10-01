@@ -1,41 +1,33 @@
 import React from "react";
-import "./Body.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-// import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
-// import { faImage } from "@fortawesome/free-solid-svg-icons";
-import SearchIcon from '@mui/icons-material/Search';
-import MicIcon from '@mui/icons-material/Mic';
-import { Button } from '@mui/material';
-import ClearIcon from '@mui/icons-material/Clear';
+import "./Body.css"; // Import the stylesheet for this component
+import SearchIcon from "@mui/icons-material/Search"; // Import the SearchIcon component from Material-UI
+import MicIcon from "@mui/icons-material/Mic"; // Import the MicIcon component from Material-UI
+import { Button } from "@mui/material"; // Import the Button component from Material-UI
+import ClearIcon from "@mui/icons-material/Clear"; // Import the ClearIcon component from Material-UI
 
 function Body() {
   return (
     <>
-      <section className="content">
-      <div className='logo' >
-          <img src='https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg' alt='logo'/>
-      </div>
-      <form class="search-bar">
-        <div class="search-bar">
-          <SearchIcon className='icon search'/>
-            <input type="text" placeholder="Search Google or type a URL"></input>
-            <MicIcon className='icon mic'/>
-            {/* <FontAwesomeIcon
-              className="magnifying-glass"
-              size="lg"
-              icon={faMagnifyingGlass}
-              style={{ color: "#bfc9d9" }}
-            />
-            <FontAwesomeIcon
-              className="microphone"
-              icon={faMicrophone}
-              size="xl"
-              style={{ color: "#dbdfe6" }}
-            />
-            <FontAwesomeIcon className="image"
-            icon={faImage} size="xl" style={{color: "#dce1ea",}} /> */}
-            </div>
+      <section className="content"> {/* Content section */}
+        <div className="logo"> {/* Logo container */}
+          <img
+            src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+            alt="logo"
+          />
+        </div>
+        <form class="rows search-bar"> {/* Form for search bar */}
+          <div class="search-bar"> {/* Search bar container */}
+            <SearchIcon className="icon search" /> {/* SearchIcon with custom styles */}
+            <input
+              type="text"
+              placeholder="Search Google or type a URL"
+            ></input> {/* Input field for search */}
+            <MicIcon className="icon mic" /> {/* MicIcon with custom styles */}
+          </div>
+          <div className="buttons"> {/* Buttons container */}
+              <button >Google Search</button> {/* Google Search button */}
+              <button >I'm Feeling Lucky</button> {/* I'm Feeling Lucky button */}
+          </div>
         </form>
       </section>
     </>
@@ -43,42 +35,3 @@ function Body() {
 }
 
 export default Body;
-
-
-// import React from "react";
-// import "./Body.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-// import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
-// import { faImage } from "@fortawesome/free-solid-svg-icons";
-
-// function Body() {
-//   return (
-//     <>
-//       <section className="content">
-//         <div className="logo">
-//           Google
-//         </div>
-//         <div class="search-bar">
-//           <input type="text" placeholder="Search Google or type a URL"></input>
-//           <FontAwesomeIcon
-//             className="magnifying-glass"
-//             size="lg"
-//             icon={faMagnifyingGlass}
-//             style={{ color: "#bfc9d9" }}
-//           />
-//           <FontAwesomeIcon
-//             className="microphone"
-//             icon={faMicrophone}
-//             size="xl"
-//             style={{ color: "#dbdfe6" }}
-//           />
-//           <FontAwesomeIcon className="image"
-//           icon={faImage} size="xl" style={{color: "#dce1ea",}} />
-//         </div>
-//       </section>
-//     </>
-//   );
-// }
-
-// export default Body;
